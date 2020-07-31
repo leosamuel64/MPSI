@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>README.md - Grip</title>
+  <link rel="icon" href="http://localhost:6419/__/grip/static/favicon.ico">
+  <link rel="stylesheet" href="README.md%20-%20Grip_fichiers/site-d1aa66e61f527a216f66b27405a3d335.css">
+  <link rel="stylesheet" href="README.md%20-%20Grip_fichiers/github-697e0e90ba73ba5a5a76f3a770410fa4.css">
+  <link rel="stylesheet" href="README.md%20-%20Grip_fichiers/frameworks-6548d5a1dd84bd83036c6a914b25b4ae.css">
+  <link rel="stylesheet" href="README.md%20-%20Grip_fichiers/octicons.css">
+  <style>
+    /* Page tweaks */
+    .preview-page {
+      margin-top: 64px;
+    }
+    /* User-content tweaks */
+    .timeline-comment-wrapper > .timeline-comment:after,
+    .timeline-comment-wrapper > .timeline-comment:before {
+      content: none;
+    }
+    /* User-content overrides */
+    .discussion-timeline.wide {
+      width: 920px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div id="preview-page" class="preview-page" data-autorefresh-url="/__/grip/refresh/">
+
+    
+
+      <div role="main" class="main-content">
+        <div class="container new-discussion-timeline experiment-repo-nav">
+          <div class="repository-content">
+            <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+              
+                <h3>
+                  <span class="octicon octicon-book"></span>
+                  README.md
+                </h3>
+              
+              <article class="markdown-body entry-content" itemprop="text" id="grip-content">
+                <h1>
+<a id="user-content-centre-de-gravité-et-de-flottaison" class="anchor" href="#centre-de-gravit%C3%A9-et-de-flottaison" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Centre de Gravité et de Flottaison</h1>
+<h2>
+<a id="user-content-1---rectangle-triple" class="anchor" href="#1---rectangle-triple" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1 - Rectangle Triple</h2>
+<p>1- On a :</p>
+<p align="center"><a href="http://localhost:6419/tex/6f27871318367464a14e7c838a56dd8e.svg?invert_in_darkmode&amp;sanitize=true" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/6f27871318367464a14e7c838a56dd8e.svg" style="max-width:100%;" width="209.65904189999998pt" height="42.94104375pt/" align="middle"></a></p>
+<p align="center"><a href="http://localhost:6419/tex/c305e7ac133a51e449b797109f78d4fb.svg?invert_in_darkmode&amp;sanitize=true&amp;sanitize=true" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/c305e7ac133a51e449b797109f78d4fb.svg" style="max-width:100%;" width="157.66690499999999pt" height="42.94104375pt/" align="middle"></a></p>
+<p align="center"><a href="http://localhost:6419/tex/d1619a39e512aee832804d104bf25c02.svg?invert_in_darkmode&amp;sanitize=true&amp;sanitize=true" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/d1619a39e512aee832804d104bf25c02.svg" style="max-width:100%;" width="113.4392094pt" height="40.70359755pt/" align="middle"></a></p>
+<p align="center"><a href="http://localhost:6419/tex/9bbb1c2089ee78a6ab418b9ab7017bff.svg?invert_in_darkmode&amp;sanitize=true&amp;sanitize=true" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/9bbb1c2089ee78a6ab418b9ab7017bff.svg" style="max-width:100%;" width="35.7625488pt" height="29.47417935pt/" align="middle"></a></p>
+<p>2-</p>
+<p>3-</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> <span class="pl-en">integrale_triple</span>(<span class="pl-smi">f</span>,<span class="pl-smi">xmin</span>,<span class="pl-smi">xmax</span>,<span class="pl-smi">ymin</span>,<span class="pl-smi">ymax</span>,<span class="pl-smi">zmin</span>,<span class="pl-smi">zmax</span>,<span class="pl-smi">N</span><span class="pl-k">=</span><span class="pl-c1">100</span>):
+    <span class="pl-s"><span class="pl-pds">"""</span></span>
+<span class="pl-s">        Entrée :    - f : [xmin,xmax]*[ymin,ymax]*[zmin,zmax] -&gt; |R</span>
+<span class="pl-s"></span>
+<span class="pl-s">        Sortie : 	-int ou float : Valeur de l'intégrale triple de f</span>
+<span class="pl-s">    <span class="pl-pds">"""</span></span>
+
+    dx <span class="pl-k">=</span> (xmax<span class="pl-k">-</span>xmin)<span class="pl-k">/</span>N
+    dy <span class="pl-k">=</span> (ymax<span class="pl-k">-</span>ymin)<span class="pl-k">/</span>N
+    dz <span class="pl-k">=</span> (zmax<span class="pl-k">-</span>zmin)<span class="pl-k">/</span>N
+
+    res<span class="pl-k">=</span><span class="pl-c1">0</span>
+    <span class="pl-k">for</span> i <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">0</span>,N):
+        <span class="pl-k">for</span> j <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">0</span>,N):
+            <span class="pl-k">for</span> k <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">0</span>,N):
+                res<span class="pl-k">+=</span>f(xmin<span class="pl-k">+</span>i<span class="pl-k">*</span>dx,ymin<span class="pl-k">+</span>j<span class="pl-k">*</span>dy,zmin<span class="pl-k">+</span>k<span class="pl-k">*</span>dz)<span class="pl-k">*</span>dx<span class="pl-k">*</span>dy<span class="pl-k">*</span>dz
+                
+    <span class="pl-k">return</span> res</pre></div>
+<p>4-</p>
+<p>5-</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> <span class="pl-en">volume</span>(<span class="pl-smi">rho</span>,<span class="pl-smi">xmin</span>,<span class="pl-smi">xmax</span>,<span class="pl-smi">ymin</span>,<span class="pl-smi">ymax</span>,<span class="pl-smi">zmin</span>,<span class="pl-smi">zmax</span>):
+    <span class="pl-s"><span class="pl-pds">"""</span></span>
+<span class="pl-s">            Entrée :    - rho : [xmin,xmax]*[ymin,ymax]*[zmin,zmax] -&gt; |R</span>
+<span class="pl-s"></span>
+<span class="pl-s">            Sortie : 	-int ou float : Valeur de l'intégrale triple de f</span>
+<span class="pl-s">    <span class="pl-pds">"""</span></span> 
+    <span class="pl-k">def</span> <span class="pl-en">f_indicatrice</span>(<span class="pl-smi">x</span>,<span class="pl-smi">y</span>,<span class="pl-smi">z</span>):
+        <span class="pl-s"><span class="pl-pds">"""</span></span>
+<span class="pl-s">        Indique si le point A(x,y,z) est dans le solide (Si oui -&gt; 1 sinon -&gt; 0) </span>
+<span class="pl-s">        <span class="pl-pds">"""</span></span>
+        <span class="pl-k">if</span> rho(x,y,z)<span class="pl-k">==</span><span class="pl-c1">0</span>:
+            <span class="pl-k">return</span> <span class="pl-c1">0</span>
+        <span class="pl-k">else</span>:
+            <span class="pl-k">return</span> <span class="pl-c1">1</span>
+        
+    volume <span class="pl-k">=</span> <span class="pl-c1">int</span>égrale_triple(f_indicatrice,xmin,xmax,ymin,ymax,zmin,zmax)
+    <span class="pl-k">return</span> volume</pre></div>
+<h2>
+<a id="user-content-2---centre-de-gravité" class="anchor" href="#2---centre-de-gravit%C3%A9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2 - Centre de gravité</h2>
+<p>1 -</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> <span class="pl-en">masse</span>(<span class="pl-smi">rho</span>,<span class="pl-smi">xmin</span>,<span class="pl-smi">xmax</span>,<span class="pl-smi">ymin</span>,<span class="pl-smi">ymax</span>,<span class="pl-smi">zmin</span>,<span class="pl-smi">zmax</span>):
+    <span class="pl-s"><span class="pl-pds">"""</span></span>
+<span class="pl-s">            Entrée :    - rho : [xmin,xmax]*[ymin,ymax]*[zmin,zmax] -&gt; |R</span>
+<span class="pl-s"></span>
+<span class="pl-s">            Sortie : 	- int ou float : masse du solide</span>
+<span class="pl-s">    <span class="pl-pds">"""</span></span> 
+    <span class="pl-k">return</span> <span class="pl-c1">int</span>égrale_triple(rho,xmin,xmax,ymin,ymax,zmin,zmax)
+</pre></div>
+<p>2 -</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> <span class="pl-en">centre_grav</span>(<span class="pl-smi">rho</span>,<span class="pl-smi">xmin</span>, <span class="pl-smi">xmax</span>, <span class="pl-smi">ymin</span>, <span class="pl-smi">ymax</span>, <span class="pl-smi">zmin</span>, <span class="pl-smi">zmax</span>):
+    <span class="pl-s"><span class="pl-pds">"""</span></span>
+<span class="pl-s">            Entrée :    - rho : [xmin,xmax]*[ymin,ymax]*[zmin,zmax] -&gt; |R</span>
+<span class="pl-s"></span>
+<span class="pl-s">            Sortie : 	- Triplet (int ou float) : Coordonnées du centre de gravité</span>
+<span class="pl-s">    <span class="pl-pds">"""</span></span>
+
+    m <span class="pl-k">=</span> <span class="pl-c1">1</span><span class="pl-k">/</span>(masse(rho,xmin,xmax,ymin,ymax,zmin,zmax))
+    Gx<span class="pl-k">=</span>m<span class="pl-k">*</span><span class="pl-c1">int</span>égrale_triple(<span class="pl-k">lambda</span> <span class="pl-smi">x</span>,<span class="pl-smi">y</span>,<span class="pl-smi">z</span>:x<span class="pl-k">*</span>rho(x,y,z),xmin,xmax,ymin,ymax,zmin,zmax)
+    Gy<span class="pl-k">=</span>m<span class="pl-k">*</span><span class="pl-c1">int</span>égrale_triple(<span class="pl-k">lambda</span> <span class="pl-smi">x</span>,<span class="pl-smi">y</span>,<span class="pl-smi">z</span>:y<span class="pl-k">*</span>rho(x,y,z),xmin,xmax,ymin,ymax,zmin,zmax)
+    Gz<span class="pl-k">=</span>m<span class="pl-k">*</span><span class="pl-c1">int</span>égrale_triple(<span class="pl-k">lambda</span> <span class="pl-smi">x</span>,<span class="pl-smi">y</span>,<span class="pl-smi">z</span>:z<span class="pl-k">*</span>rho(x,y,z),xmin,xmax,ymin,ymax,zmin,zmax)
+    <span class="pl-k">return</span> (Gx,Gy,Gz)
+</pre></div>
+<p><a href="http://localhost:6419/Centre_grav.png" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/Centre_grav.png" alt="Test centre de gravité" style="max-width:100%;"></a></p>
+<h2>
+<a id="user-content-3---centre-de-gravité" class="anchor" href="#3---centre-de-gravit%C3%A9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3 - Centre de gravité</h2>
+<p>1 -
+<a href="http://localhost:6419/Figure.png" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/Figure.png" alt="Figure" style="max-width:100%;"></a></p>
+<p>D'après le théorème de Thales, on a :</p>
+<p align="center"><a href="http://localhost:6419/tex/4a82e431d0735014e5a06f9ad67a1c1b.svg?invert_in_darkmode&amp;sanitize=true" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/4a82e431d0735014e5a06f9ad67a1c1b.svg" style="max-width:100%;" width="78.84452895pt" height="33.62942055pt/" align="middle"></a></p>
+Or <p align="center"><a href="http://localhost:6419/tex/8b64c6020812328582b928dec6359c64.svg?invert_in_darkmode&amp;sanitize=true" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/8b64c6020812328582b928dec6359c64.svg" style="max-width:100%;" width="92.89467825pt" height="11.4155283pt/" align="middle"></a></p> 
+<p align="center"><a href="http://localhost:6419/tex/9aca8975e6ec4821dd237604235895da.svg?invert_in_darkmode&amp;sanitize=true" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/9aca8975e6ec4821dd237604235895da.svg" style="max-width:100%;" width="124.51188255pt" height="14.611878599999999pt/" align="middle"></a></p>
+Donc 
+<p align="center"><a href="http://localhost:6419/tex/b3cefd3af052723b94d0a6f842edf9b3.svg?invert_in_darkmode&amp;sanitize=true" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/b3cefd3af052723b94d0a6f842edf9b3.svg" style="max-width:100%;" width="315.58061369999996pt" height="34.7253258pt/" align="middle"></a></p>
+Avec le théorème de Pythagore, on obtient
+<p align="center"><a href="http://localhost:6419/tex/089a989ca48a3a76a3a2a5cb7f3d51c4.svg?invert_in_darkmode&amp;sanitize=true" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/089a989ca48a3a76a3a2a5cb7f3d51c4.svg" style="max-width:100%;" width="228.57255629999997pt" height="18.312383099999998pt/" align="middle"></a></p>
+<p>2 -</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> <span class="pl-en">coord_R1_vers_coord_R0</span>(<span class="pl-smi">x</span>,<span class="pl-smi">y</span>,<span class="pl-smi">z</span>,<span class="pl-smi">theta</span>):
+    <span class="pl-s"><span class="pl-pds">"""</span> </span>
+<span class="pl-s">            Entrée : 	- x,y,z : Coordonnées dans R1</span>
+<span class="pl-s">                        - theta : Angle entre fy et ey</span>
+<span class="pl-s">                        </span>
+<span class="pl-s">            Sortie : 	- Triplet (int ou float) : coordonnées dans R0</span>
+<span class="pl-s">    <span class="pl-pds">"""</span></span>
+
+    c,s <span class="pl-k">=</span> np.cos(theta), np.sin(theta)
+    <span class="pl-k">return</span> (x<span class="pl-k">*</span>c<span class="pl-k">-</span>y<span class="pl-k">*</span>s,x<span class="pl-k">**</span><span class="pl-c1">2</span><span class="pl-k">+</span>y<span class="pl-k">**</span><span class="pl-c1">2</span><span class="pl-k">-</span>(x<span class="pl-k">*</span>c<span class="pl-k">-</span>y<span class="pl-k">*</span>s)<span class="pl-k">**</span><span class="pl-c1">2</span>,z)</pre></div>
+<p>3 -</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> <span class="pl-en">un_dans_leau_et_dans_X</span>(<span class="pl-smi">x</span>,<span class="pl-smi">y</span>,<span class="pl-smi">z</span>,<span class="pl-smi">rho</span>,<span class="pl-smi">theta</span>,<span class="pl-smi">h</span>):
+    <span class="pl-s"><span class="pl-pds">"""</span></span>
+<span class="pl-s">            Entrée : 	- x,y,z : Coordonnées dans R0</span>
+<span class="pl-s">                        - rho : [xmin,xmax]*[ymin,ymax]*[zmin,zmax] -&gt; |R</span>
+<span class="pl-s">                        - theta : Angle entre fy et ey</span>
+<span class="pl-s">                        - h : Niveau de la surface de l'eau</span>
+<span class="pl-s">                        </span>
+<span class="pl-s">            Sortie : 	- 1 : Si le point est dans le solide et sous l'eau</span>
+<span class="pl-s">                        - 0 : Sinon</span>
+<span class="pl-s">    <span class="pl-pds">"""</span></span>
+    _,y1,_ <span class="pl-k">=</span> coord_R1_vers_coord_R0(x,y,z,theta)
+    <span class="pl-k">if</span> rho(x,y,z) <span class="pl-k">!=</span> <span class="pl-c1">0</span> <span class="pl-k">and</span> y1<span class="pl-k">&lt;</span>h:
+        <span class="pl-k">return</span> <span class="pl-c1">1</span>
+    <span class="pl-k">else</span>:
+        <span class="pl-k">return</span> <span class="pl-c1">0</span></pre></div>
+<p>4 -</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> volume_immergé(rho, theta, h, xmin, xmax, ymin, ymax, zmin, zmax):
+    <span class="pl-s"><span class="pl-pds">"""</span></span>
+<span class="pl-s">            Entrée :    - rho : [xmin,xmax]*[ymin,ymax]*[zmin,zmax] -&gt; |R</span>
+<span class="pl-s">                        - theta : Angle entre fy et ey</span>
+<span class="pl-s">                        - h : Niveau de la surface de l'eau</span>
+<span class="pl-s"></span>
+<span class="pl-s">            Sortie : 	-int ou float : volume immergé</span>
+<span class="pl-s">    <span class="pl-pds">"""</span></span>   
+    <span class="pl-k">return</span> <span class="pl-c1">int</span>égrale_triple(<span class="pl-k">lambda</span> <span class="pl-smi">x</span>,<span class="pl-smi">y</span>,<span class="pl-smi">z</span>: un_dans_leau_et_dans_X(x,y,z,rho,theta,h),xmin,xmax,ymin,ymax,zmin,zmax)
+
+
+
+<span class="pl-k">def</span> <span class="pl-en">centre_flott</span>(<span class="pl-smi">rho</span>, <span class="pl-smi">theta</span>, <span class="pl-smi">h</span>, <span class="pl-smi">xmin</span>, <span class="pl-smi">xmax</span>, <span class="pl-smi">ymin</span>, <span class="pl-smi">ymax</span>, <span class="pl-smi">zmin</span>, <span class="pl-smi">zmax</span>):
+    <span class="pl-s"><span class="pl-pds">"""</span></span>
+<span class="pl-s">            Entrée :    - rho : [xmin,xmax]*[ymin,ymax]*[zmin,zmax] -&gt; |R</span>
+<span class="pl-s">                        - theta : Angle entre fy et ey</span>
+<span class="pl-s">                        - h : Niveau de la surface de l'eau	</span>
+<span class="pl-s"></span>
+<span class="pl-s">            Sortie : 	- Triplet (int ou float) : Coordonnées de centre de flottaison</span>
+<span class="pl-s">    <span class="pl-pds">"""</span></span>  
+    V <span class="pl-k">=</span> <span class="pl-c1">1</span><span class="pl-k">/</span>(volume_immergé(rho,theta,h,xmin,xmax,ymin,ymax,zmin,zmax))
+    Fx <span class="pl-k">=</span> V<span class="pl-k">*</span><span class="pl-c1">int</span>égrale_triple(<span class="pl-k">lambda</span> <span class="pl-smi">x</span>,<span class="pl-smi">y</span>,<span class="pl-smi">z</span>: x<span class="pl-k">*</span>un_dans_leau_et_dans_X(x,y,z,rho,theta,h),xmin,xmax,ymin,ymax,zmin,zmax)
+    Fy <span class="pl-k">=</span> V<span class="pl-k">*</span><span class="pl-c1">int</span>égrale_triple(<span class="pl-k">lambda</span> <span class="pl-smi">x</span>,<span class="pl-smi">y</span>,<span class="pl-smi">z</span>: y<span class="pl-k">*</span>un_dans_leau_et_dans_X(x,y,z,rho,theta,h),xmin,xmax,ymin,ymax,zmin,zmax)
+    Fz <span class="pl-k">=</span> V<span class="pl-k">*</span><span class="pl-c1">int</span>égrale_triple(<span class="pl-k">lambda</span> <span class="pl-smi">x</span>,<span class="pl-smi">y</span>,<span class="pl-smi">z</span>: z<span class="pl-k">*</span>un_dans_leau_et_dans_X(x,y,z,rho,theta,h),xmin,xmax,ymin,ymax,zmin,zmax)
+    
+    <span class="pl-k">return</span> (Fx,Fy,Fz)</pre></div>
+<p><a href="http://localhost:6419/centre_flott.png" target="_blank" rel="noopener noreferrer"><img src="README.md%20-%20Grip_fichiers/centre_flott.png" alt="Test centre de gravité" style="max-width:100%;"></a></p>
+<p>5 -</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> <span class="pl-en">centre_grav_R1</span>(<span class="pl-smi">rho</span>,<span class="pl-smi">xmin</span>,<span class="pl-smi">xmax</span>,<span class="pl-smi">ymin</span>,<span class="pl-smi">ymax</span>,<span class="pl-smi">zmin</span>,<span class="pl-smi">zmax</span>,<span class="pl-smi">theta</span>):
+    <span class="pl-s"><span class="pl-pds">"""</span></span>
+<span class="pl-s">            Entrée :    - rho : [xmin,xmax]*[ymin,ymax]*[zmin,zmax] -&gt; |R</span>
+<span class="pl-s">                        - theta : Angle entre fy et ey</span>
+<span class="pl-s">                        </span>
+<span class="pl-s">            Sortie : 	- Triplet (int ou float) : Coordonnées du centre de gravité dans R1</span>
+<span class="pl-s">    <span class="pl-pds">"""</span></span>  
+    x,y,z <span class="pl-k">=</span> centre_grav(rho,xmin, xmax, ymin, ymax, zmin, zmax)
+    x,y,z <span class="pl-k">=</span> coord_R0_vers_coord_R1(x,y,z,theta)
+    <span class="pl-k">return</span> (x,y,z)</pre></div>
+
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+  </div>
+  <div>&nbsp;</div>
+  </div><script>
+    function showCanonicalImages() {
+      var images = document.getElementsByTagName('img');
+      if (!images) {
+        return;
+      }
+      for (var index = 0; index < images.length; index++) {
+        var image = images[index];
+        if (image.getAttribute('data-canonical-src') && image.src !== image.getAttribute('data-canonical-src')) {
+          image.src = image.getAttribute('data-canonical-src');
+        }
+      }
+    }
+
+    function scrollToHash() {
+      if (location.hash && !document.querySelector(':target')) {
+        var element = document.getElementById('user-content-' + location.hash.slice(1));
+        if (element) {
+           element.scrollIntoView();
+        }
+      }
+    }
+
+    function autorefreshContent(eventSourceUrl) {
+      var initialTitle = document.title;
+      var contentElement = document.getElementById('grip-content');
+      var source = new EventSource(eventSourceUrl);
+      var isRendering = false;
+
+      source.onmessage = function(ev) {
+        var msg = JSON.parse(ev.data);
+        if (msg.updating) {
+          isRendering = true;
+          document.title = '(Rendering) ' + document.title;
+        } else {
+          isRendering = false;
+          document.title = initialTitle;
+          contentElement.innerHTML = msg.content;
+          showCanonicalImages();
+        }
+      }
+
+      source.onerror = function(e) {
+        if (e.readyState === EventSource.CLOSED && isRendering) {
+          isRendering = false;
+          document.title = initialTitle;
+        }
+      }
+    }
+
+    window.onhashchange = function() {
+      scrollToHash();
+    }
+
+    window.onload = function() {
+      scrollToHash();
+    }
+
+    showCanonicalImages();
+
+    var autorefreshUrl = document.getElementById('preview-page').getAttribute('data-autorefresh-url');
+    if (autorefreshUrl) {
+      autorefreshContent(autorefreshUrl);
+    }
+  </script>
+
+</body></html>
