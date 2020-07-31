@@ -3,7 +3,7 @@
 ## 1 - Rectangle Triple
 1- On a :
 
-<p align="center"><img src="/Python/DM2/tex/6f27871318367464a14e7c838a56dd8e.svg?invert_in_darkmode&sanitize=true" align=middle width=209.65904189999998pt height=42.94104375pt/></p>
+<p align="center"><img src="/IPT/1-Python/DM2/tex/6f27871318367464a14e7c838a56dd8e.svg?invert_in_darkmode&sanitize=true" align=middle width=209.65904189999998pt height=42.94104375pt/></p>
 
 <p align="center"><img src="/tex/c305e7ac133a51e449b797109f78d4fb.svg?invert_in_darkmode&sanitize=true&sanitize=true" align=middle width=157.66690499999999pt height=42.94104375pt/></p>
 
@@ -96,13 +96,13 @@ def centre_grav(rho,xmin, xmax, ymin, ymax, zmin, zmax):
 ![Figure](Figure.png)
 
 D'après le théorème de Thales, on a :
-<p align="center"><img src="/Python/DM2/tex/4a82e431d0735014e5a06f9ad67a1c1b.svg?invert_in_darkmode&sanitize=true" align=middle width=78.84452895pt height=33.62942055pt/></p>
-Or <p align="center"><img src="/Python/DM2/tex/8b64c6020812328582b928dec6359c64.svg?invert_in_darkmode&sanitize=true" align=middle width=92.89467825pt height=11.4155283pt/></p> 
-<p align="center"><img src="/Python/DM2/tex/9aca8975e6ec4821dd237604235895da.svg?invert_in_darkmode&sanitize=true" align=middle width=124.51188255pt height=14.611878599999999pt/></p>
+<p align="center"><img src="/IPT/1-Python/DM2/tex/4a82e431d0735014e5a06f9ad67a1c1b.svg?invert_in_darkmode&sanitize=true" align=middle width=78.84452895pt height=33.62942055pt/></p>
+Or <p align="center"><img src="/IPT/1-Python/DM2/tex/8b64c6020812328582b928dec6359c64.svg?invert_in_darkmode&sanitize=true" align=middle width=92.89467825pt height=11.4155283pt/></p> 
+<p align="center"><img src="/IPT/1-Python/DM2/tex/9aca8975e6ec4821dd237604235895da.svg?invert_in_darkmode&sanitize=true" align=middle width=124.51188255pt height=14.611878599999999pt/></p>
 Donc 
-<p align="center"><img src="/Python/DM2/tex/b3cefd3af052723b94d0a6f842edf9b3.svg?invert_in_darkmode&sanitize=true" align=middle width=315.58061369999996pt height=34.7253258pt/></p>
+<p align="center"><img src="/IPT/1-Python/DM2/tex/b3cefd3af052723b94d0a6f842edf9b3.svg?invert_in_darkmode&sanitize=true" align=middle width=315.58061369999996pt height=34.7253258pt/></p>
 Avec le théorème de Pythagore, on obtient
-<p align="center"><img src="/Python/DM2/tex/089a989ca48a3a76a3a2a5cb7f3d51c4.svg?invert_in_darkmode&sanitize=true" align=middle width=228.57255629999997pt height=18.312383099999998pt/></p>
+<p align="center"><img src="/IPT/1-Python/DM2/tex/089a989ca48a3a76a3a2a5cb7f3d51c4.svg?invert_in_darkmode&sanitize=true" align=middle width=228.57255629999997pt height=18.312383099999998pt/></p>
 
 2 - 
 ```python
